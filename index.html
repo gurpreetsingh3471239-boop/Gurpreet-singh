@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baba Deep Singh Ji Dental & Journal Clinic</title>
+    <style>
+        /* Color Palette & Base Styles */
+        :root {
+            --bg-cream: #FDFBF7;
+            --light-grey: #F2F2F2;
+            --dark-grey: #4A4A4A;
+            --accent-cream: #EAE3D2;
+            --text-main: #333333;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-cream);
+            color: var(--text-main);
+            line-height: 1.6;
+        }
+
+        /* Header & Navigation */
+        header {
+            background-color: var(--light-grey);
+            padding: 20px 10%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid var(--accent-cream);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        .logo h1 {
+            font-size: 1.5rem;
+            color: var(--dark-grey);
+            letter-spacing: 1px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--dark-grey);
+            font-weight: 600;
+            margin-left: 20px;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #000;
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 80px 10%;
+            text-align: center;
+            background: linear-gradient(to bottom, var(--light-grey), var(--bg-cream));
+        }
+
+        .hero h2 {
+            font-size: 2.5rem;
+            color: var(--dark-grey);
+            margin-bottom: 10px;
+        }
+
+        .hero h3 {
+            font-size: 1.3rem;
+            color: #666;
+            font-weight: 400;
+            margin-bottom: 30px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: var(--accent-cream);
+            color: var(--dark-grey);
+            padding: 12px 30px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 4px;
+            transition: background 0.3s;
+            border: 1px solid #D1C7BD;
+        }
+
+        .cta-button:hover {
+            background-color: var(--light-grey);
+        }
+
+        /* Content Sections */
+        .section {
+            padding: 60px 10%;
+        }
+
+        .section-grey {
+            background-color: var(--light-grey);
+        }
+
+        .section h2 {
+            text-align: center;
+            margin-bottom: 40px;
+            color: var(--dark-grey);
+            position: relative;
+        }
+
+        .section h2::after {
+            content: '';
+            display: block;
+            width: 50px;
+            height: 3px;
+            background-color: var(--accent-cream);
+            margin: 10px auto 0 auto;
+        }
+
+        .about-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+            font-size: 1.1rem;
+        }
+
+        /* Booking / Contact Slide Section */
+        .booking-card {
+            background-color: var(--bg-cream);
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 40px;
+            border-radius: 8px;
+            border: 1px solid var(--accent-cream);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.02);
+            text-align: center;
+        }
+
+        .contact-info {
+            margin: 25px 0;
+        }
+
+        .contact-item {
+            margin: 15px 0;
+            font-size: 1.2rem;
+        }
+
+        .contact-item strong {
+            color: var(--dark-grey);
+        }
+
+        .contact-item a {
+            color: #4A6B82;
+            text-decoration: none;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--dark-grey);
+            color: var(--light-grey);
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+                gap: 15px;
+            }
+            nav a {
+                margin: 0 10px;
+            }
+            .hero h2 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header>
+        <div class="logo">
+            <h1>BABA DEEP SINGH JI DENTAL & JOURNAL CLINIC</h1>
+        </div>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#booking">Bookings</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h2>Welcome to Our Clinic</h2>
+        <h3>Experienced Dental Care & Consultations</h3>
+        <a href="#booking" class="cta-button">Book an Appointment</a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <h2>Led by Experts</h2>
+        <div class="about-content">
+            <p>Welcome to <strong>Baba Deep Singh Ji Dental and Journal Clinic</strong>. We are dedicated to providing exceptional dental services and care in a warm, welcoming environment. Our clinic combines modern dental practices with compassionate patient communication to ensure your visit is comfortable and stress-free.</p>
+            <br>
+            <p>Our lead practitioner, <strong>Dr. Parkash Singh</strong>, brings years of medical expertise and dedication to the community, helping you achieve and maintain a healthy, bright smile.</p>
+        </div>
+    </section>
+
+    <!-- Booking Slide / Section -->
+    <section id="booking" class="section section-grey">
+        <h2>Make a Booking</h2>
+        <div class="booking-card">
+            <h3>Contact Us to Schedule Your Visit</h3>
+            <p style="color: #666; margin-top: 5px;">Reach out directly via phone or email to secure your appointment slot.</p>
+            
+            <div class="contact-info">
+                <div class="contact-item">
+                    <strong>Phone:</strong> 
+                    <a href="tel:+919888358148">+91 98883 58148</a>
+                </div>
+                <div class="contact-item">
+                    <strong>Email:</strong> 
+                    <a href="mailto:drparkash1960@gmail.com">drparkash1960@gmail.com</a>
+                </div>
+            </div>
+            
+            <p style="font-size: 0.9rem; color: #888;">Dr. Parkash Singh & Team look forward to welcoming you.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Baba Deep Singh Ji Dental and Journal Clinic. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
